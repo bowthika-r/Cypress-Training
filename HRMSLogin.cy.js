@@ -17,8 +17,8 @@ describe('HRMS Login Using valid creds', () => {
     it('HRMS Login Using valid creds', () => {
         cy.visit('https://desicrewdtrial.crystalhr.com/Account/Login?returnUrl=%2FHome%2FIndex')
         cy.get('#login-box > div > h4').should('be.visible')
-        cy.get('#Username').type('DC6026')
-        cy.get('#Password').type('Gem@9916')
+        cy.get('#Username').type('DC60256')
+        cy.get('#Password').type('test6')
         cy.get('#btnLogin').click()
         cy.get('.dropdown-toggle > .ace-icon').click()
         cy.get('.user-menu > :nth-child(7) > a').click()
